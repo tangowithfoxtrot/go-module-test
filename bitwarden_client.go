@@ -3,7 +3,7 @@ package sdk
 import (
 	"encoding/json"
 
-	"github.com/bitwarden/sdk/languages/go/internal/cinterface"
+	"github.com/coltonhurst/go-module-test/internal/cinterface"
 )
 
 type BitwardenClient struct {
