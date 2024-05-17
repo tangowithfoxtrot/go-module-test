@@ -7,11 +7,11 @@ import (
 
 /*
 #cgo LDFLAGS: -lbitwarden_c
-#cgo linux amd64 LDFLAGS: -L/usr/local/lib -L/usr/lib -L ./lib/linux-x64
-#cgo linux arm64 LDFLAGS: -L/usr/local/lib -L/usr/lib -L ./lib/linux-arm64
-#cgo darwin amd64 LDFLAGS: -L/usr/local/lib -L/usr/lib -L ./lib/darwin-x64
-#cgo darwin arm64 LDFLAGS: -L/usr/local/lib -L/usr/lib -L ./lib/darwin-arm64
-#cgo windows amd64 LDFLAGS: -L/usr/local/lib -L/usr/lib -L ./lib/windows-arm64
+#cgo linux,amd64 LDFLAGS: -L/usr/local/lib -L/usr/lib -L ./lib/linux-x64
+#cgo linux,arm64 LDFLAGS: -L/usr/local/lib -L/usr/lib -L ./lib/linux-arm64
+#cgo darwin,amd64 LDFLAGS: -L/usr/local/lib -L/usr/lib -L ./lib/darwin-x64
+#cgo darwin,arm64 LDFLAGS: -L/usr/local/lib -L/usr/lib -L ./lib/darwin-arm64
+#cgo windows,amd64 LDFLAGS: -L/usr/local/lib -L/usr/lib -L ./lib/windows-arm64
 #include <stdlib.h>
 typedef void* ClientPtr;
 extern char* run_command(const char *command, ClientPtr client);
